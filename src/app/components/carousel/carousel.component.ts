@@ -27,12 +27,12 @@ export class CarouselComponent implements OnInit {
   }
 
   previousSlide() {
-    this.slideIndex = this.slideIndex == 0 ? this.slides.length - 1 : this.slideIndex - 1;
+    this.slideIndex = this.slideIndex == 0 ? this.slides.length - 1 : --this.slideIndex;
     this.slideData = this.slides[this.slideIndex];
   }
 
   nextSlide() {
-    this.slideIndex = this.slideIndex != (this.slides.length - 1) ? this.slideIndex + 1 : 0;
+    this.slideIndex = this.slideIndex != (this.slides.length - 1) ? ++this.slideIndex : 0;
     this.slideData = this.slides[this.slideIndex];
   }
 
