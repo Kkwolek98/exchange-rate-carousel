@@ -15,7 +15,7 @@ export class CarouselComponent implements OnInit {
     ["GBP", "EUR", "https://cdn.getyourguide.com/img/tour_img-2010672-148.jpg"],
     ["CHF", "USD", "https://i.ytimg.com/vi/HBr2yVf9L-M/maxresdefault.jpg"],
     ["USD", "GBP", "https://eyeradio.org/wp-content/uploads/2019/04/WH.jpg"]
-  ]; // I would put there objects instead of arrays
+  ]; // I would put there array of objects instead of array of arrays
 
   constructor() {
     this.slideData = this.slides[this.slideIndex];
