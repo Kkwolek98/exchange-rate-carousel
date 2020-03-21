@@ -8,7 +8,7 @@ import { timer } from 'rxjs';
 })
 export class CarouselComponent implements OnInit {
 
-  public slideData;
+  public slideData; //Add type for SlideData
 
   public slideIndex: number = 0;
   public slides: Array<Array<string>> = [
