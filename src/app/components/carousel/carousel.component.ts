@@ -15,7 +15,7 @@ export class CarouselComponent implements OnInit {
     ["GBP", "EUR", "https://cdn.getyourguide.com/img/tour_img-2010672-148.jpg"],
     ["CHF", "USD", "https://i.ytimg.com/vi/HBr2yVf9L-M/maxresdefault.jpg"],
     ["USD", "GBP", "https://eyeradio.org/wp-content/uploads/2019/04/WH.jpg"]
-  ];
+  ]; // I would put there objects instead of arrays
 
   constructor() {
     this.slideData = this.slides[this.slideIndex];
@@ -32,13 +32,8 @@ export class CarouselComponent implements OnInit {
   }
 
   nextSlide() {
-    console.log(this.slideIndex);
-    console.log(this.slides.length)
-    console.log(this.slideIndex != this.slides.length - 1)
     this.slideIndex = this.slideIndex != (this.slides.length - 1) ? this.slideIndex + 1 : 0;
-    console.log(this.slideIndex)
     this.slideData = this.slides[this.slideIndex];
-    console.log(this.slideData)
   }
 
 }
