@@ -14,6 +14,6 @@ export class ExchangeRateService {
   public getRate(from: string, to: string): Observable<ExchangeRate> {
     let parameters: HttpParams = new HttpParams();
     parameters = parameters.append('base', from).append('symbols', to);
-    return this.http.get<ExchangeRate>("https://api.exchangeratesapi.io" + '/latest', { params: parameters }); // TODO: Fix to use env
+    return this.http.get<ExchangeRate>(environment.API + '/latest', { params: parameters });
   }
 }
