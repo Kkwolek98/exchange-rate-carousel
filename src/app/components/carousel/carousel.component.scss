@@ -1,0 +1,17 @@
+.navigation {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.navigation-item {
+    display: inline;
+    cursor: pointer;
+    font-size: 32px;
+}
+.navigation-item:last-child {
+    float: right;
+}
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+}
